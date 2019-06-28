@@ -13,14 +13,13 @@ export class ShopingEditComponent implements OnInit {
 
 	@Output() ingredientAdded = new EventEmitter<Ingredient>();
   
-	constructor() { }
+    constructor() { }
 
-  ngOnInit() {
-  }
+    ngOnInit() {}
 
   addItem() {
-	const ingName = this.nameInputRef.nativeElement.value;
-	const ingAmount = this.amountInputRef.nativeElement.value;
+	const ingName: string = this.nameInputRef.nativeElement.value;
+	const ingAmount: number = this.amountInputRef.nativeElement.value;
 	this.ingredientAdded.emit(new Ingredient(ingName, ingAmount))
   }
 }
