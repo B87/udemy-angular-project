@@ -13,11 +13,11 @@ export class BasichighlightDirective implements OnInit {
 	  //this.renderer.setStyle(this.elRef.nativeElement, 'backgroundColor', 'blue');
   }
 
-  @HostListener('mouseListener') mouseOver(eventData: Event) { 
+  @HostListener('mouseenter') mouseOver(eventData: Event) { 
 		this.renderer.setStyle(this.elRef.nativeElement, 'backgroundColor', 'blue');
   }
 
-  @HostListener('mouseLeave') mouseLeave(eventData: Event) { 
+  @HostListener('mouseleave') mouseLeave(eventData: Event) { 
 		this.renderer.setStyle(this.elRef.nativeElement, 'backgroundColor', 'transparent');
   }
 }

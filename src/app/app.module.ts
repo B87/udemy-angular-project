@@ -10,6 +10,9 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { ShopingListComponent } from './shoping-list/shoping-list.component';
 import { ShopingEditComponent } from './shoping-list/shoping-edit/shoping-edit.component';
 import { BasichighlightDirective } from './shared/basichighlight.directive';
+import { HostbindingDirective } from './shared/hostbinding.directive';
+import { UnlessstructuralDirective } from './shared/unlessstructural.directive';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { BasichighlightDirective } from './shared/basichighlight.directive';
     RecipeItemComponent,
     ShopingListComponent,
     ShopingEditComponent,
-    BasichighlightDirective
+    BasichighlightDirective,
+    HostbindingDirective,
+    UnlessstructuralDirective,
+    DropdownDirective
   ],
   imports: [
 	BrowserModule,
