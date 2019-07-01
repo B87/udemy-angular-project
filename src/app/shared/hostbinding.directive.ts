@@ -13,7 +13,7 @@ export class HostbindingDirective implements OnInit {
 
   @HostBinding('style.backgroundColor') backgroundColor: string; 
 
-  onInit() {
+  ngOnInit() {
 	this.backgroundColor = this.defaultCol;
   }
 

@@ -13,6 +13,7 @@ import { BasichighlightDirective } from './shared/basichighlight.directive';
 import { HostbindingDirective } from './shared/hostbinding.directive';
 import { UnlessstructuralDirective } from './shared/unlessstructural.directive';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { ShopingListService } from './shoping-list/shoping-list.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { DropdownDirective } from './shared/dropdown.directive';
 	BrowserModule,
 	FormsModule
   ],
-  providers: [],
+  providers: [ShopingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
