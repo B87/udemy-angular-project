@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Routes, RouterModule } from '@angular/router';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { RecipesComponent } from './recipes/recipes.component';
@@ -14,6 +16,10 @@ import { HostbindingDirective } from './shared/hostbinding.directive';
 import { UnlessstructuralDirective } from './shared/unlessstructural.directive';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { ShopingListService } from './shoping-list/shoping-list.service';
+import { AppRoutingModule } from './app-routing.module';
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
+
 
 @NgModule({
   declarations: [
@@ -28,11 +34,14 @@ import { ShopingListService } from './shoping-list/shoping-list.service';
     BasichighlightDirective,
     HostbindingDirective,
     UnlessstructuralDirective,
-    DropdownDirective
+    DropdownDirective,
+    RecipeStartComponent,
+    RecipeEditComponent
   ],
   imports: [
 	BrowserModule,
-	FormsModule
+	FormsModule,
+	AppRoutingModule
   ],
   providers: [ShopingListService],
   bootstrap: [AppComponent]
